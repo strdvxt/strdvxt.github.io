@@ -19,51 +19,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href= 
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+        <script src= 
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"> 
+        </script> 
 
-    <title>This is NAB !</title>
+    <title class="ms-5">This is NAB !</title>
     <link rel="icon" href="img/logo2.png" />
   </head>
 
   <body>
     <main>
       <div class="header" id="myHeader">
-        <nav>
-          <div class="logo">
-            <img src="img/logo.png" alt="" />
-          </div>
-          <ul class="nav-list">
-            <li class="nav-item">
+        <nav class="navbar navbar-expand-md navbar-dark pt-5 pb-4">
+          <div class="container-xxl">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        </button>
+        <div
+           class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav">
+          <img src="img/logo.png" alt="" />
+          <ul class="nav-list navbar-nav">
+            <li class="nav-item p-3">
               <a href="index.html" class="nav-link">
-                <span class="nav-text">HOME</span></a
-              >
+                <span class="nav-text">HOME</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-3">
               <a href="#about" class="nav-link">
                 <span class="nav-text">ABOUT</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-3">
               <a href="#experiences" class="nav-link">
                 <span class="nav-text">EXPERIENCES</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item p-3">
               <a href="#contact" class="nav-link">
                 <span class="nav-text">CONTACT</span>
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+        </div>
+      </nav>
+    </div>
 
-      <section id="info">
-        <br /><br />
-        <div class="infoPic">
+      <div class="container-fluid">
+        <br />
+        <div class="row">
+        <div class="infoPic col-6 col-sm-3 ms-5">
           <img src="img/me.jpg" alt="Anggun profile picture" />
         </div>
-        <div class="infoText">
+        <div class=" col">
+          <br><br>
           <p class="infoTextp1">WELL, HELLO MUGGLES !</p>
-          <br />
           <h1 class="title" data-text="I'm Anggun Barokatillah">
             I'm <span>Anggun</span> Barokatillah
           </h1>
@@ -75,17 +94,22 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('img/Nyimas_CV_new.pdf')"
+              onclick="window.open('img/Nyimas_CV.pdf')"
             >
               Download CV
             </button>
             <button
               class="btn btn-color-1"
-              onclick="location.href='./#contact'"
+              onclick="window.open('https://www.canva.com/design/DAE_08lSvL4/_QQP5hG-8QQQhpvkvRmirA/edit?utm_content=DAE_08lSvL4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton')"
             >
-              Contact Info
+              View Portofolio 
             </button>
           </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    </div>
           <!-- <div id="socials-container">
             <img
               src="./assets/linkedin.png"
@@ -100,37 +124,30 @@
               onclick="location.href='https://github.com/'"
             />
           </div> -->
-          <br />
-        </div>
-      </section>
+          
 
       <section id="about">
         <p class="infoTextp1">Get To Know More</p>
 
         <h1 class="title">ABOUT-ME</h1>
         <br />
-        <div class="container">
-          <div class="sub-container">
-            <div class="scol1">
-              <img src="img/me2.jpg" alt="" />
-            </div>
-            <div class="scol2">
-              <br /><br /><br /><br />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <div class="p-3 ms-5 img-responsive">
+                <img src="img/me2.jpg" alt="" />
+              </div>
+              <br /><br />
               <p>Name : <span>Nyimas Anggun &emsp; Barokatillah</span></p>
-              <br />
               <p>Major : <span>Physics Engineering</span></p>
-              <br />
               <p>Institution : <span>Telkom University</span></p>
               <br /><br /><br /><br />
             </div>
-          </div>
-          <div class="aboutExp">
+            
+          <div class="col-6 col-sm-3">
             <p>
-              Honestly, I dont have that much story to tell here. Now, I'm a
-              third year student of Physics Engineering
-              <span>(bachelor)</span> in Telkom University. Physics Engineering
-              was my decision to choose when I'm in Junior Highschool. I was so
-              curious bit 'bout science, but after all, it just a
+              Honestly, I dont have that much story to tell here. Now, I'm a third year student of Physics Engineering<span>(bachelor)</span> in Telkom University. Physics Engineering
+              was my decision to choose when I'm in Junior Highschool. I was so curious bit 'bout science, but after all, it just a
               <span>silly</span> kid who has so many dreams. But then when I was
               in Senior Highschool 100% I was interest to social thingy. I had
               convicing myself to be a business women in future. I want to be a
@@ -152,7 +169,7 @@
               !
             </p>
           </div>
-        </div>
+    
         <div class="skill">
           <h3>My Skills :</h3>
           <p>
@@ -163,6 +180,8 @@
           </p>
         </div>
         <br />
+      </div>
+    </div>
       </section>
 
       <section id="experiences">
@@ -193,9 +212,10 @@
         <div class="contact-section">
           <p>
               <br />Please let me know if you have a feed back about this web.
-            </p>
-          <br />
+              <br />
             <p>You also can contact me through my socmed</p>
+            </p>
+          
           <br /><br />
           <!---<div class="contact-form">
             <br /><br />
@@ -229,24 +249,24 @@
           </div>
 -->
           <div class="contact-info">
-            <div class="con-1">
+            <div class="col-3">
               <a href="https://wa.me/6285157718335" target="_blank">
                 <span class="con-icon fa-brands fa-whatsapp"></span>
               </a>
             </div>
-            <div class="con-2">
+            <div class="col-3">
               <a href="https://Instagram.com/anggunbrktllh">
                 <span class="con-icon fa-brands fa-instagram"></span>
               </a>
             </div>
-            <div class="con-3">
+            <div class="col-3">
               <a
                 href="https://www.linkedin.com/in/anggun-barokatillah-a60483207/"
               >
                 <span class="con-icon fa-brands fa-linkedin-in"></span>
               </a>
             </div>
-            <div class="con-4">
+            <div class="col-3">
               <a href="https://github.com/strdvxt">
                 <span class="con-icon fa-brands fa-github"></span>
               </a>
@@ -254,9 +274,7 @@
           </div>
         </div>
       </section>
-
-      <div class="break"></div>
-
+      
       <footer>
         <p>Copyright <span id="year"></span>. Nyimas Anggun</p>
       </footer>
